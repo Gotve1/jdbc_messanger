@@ -93,16 +93,13 @@ public class Main {
 
     public static void controlPanel(SQLConnect sqlConnect, Scanner scanner) {
         while (sqlConnect.isSignedIn) {
-            System.out.println("\nEnter the command\n");
+            System.out.println("\nEnter the command, to see list of available commands use help\n");
             switch (scanner.nextLine()) {
                 case "get":
                     get(sqlConnect);
                     break;
                 case "get_messages":
                     getMessages(sqlConnect);
-                    break;
-                case "signUpProcess":
-                    signUpProcess(sqlConnect);
                     break;
                 case "post_message":
                     postMessage(sqlConnect);
@@ -219,6 +216,6 @@ public class Main {
     }
 
     public static void help() {
-        System.out.println("Available commands:\n sign_in\n get\n get_messages\n signUpProcess\n post_message\n update\n delete\n exit");
+        System.out.println("Available commands:\n get\n get_messages\n signUpProcess\n post_message\n update\n delete\n exit");
     }
 }
