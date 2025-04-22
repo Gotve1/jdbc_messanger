@@ -216,6 +216,6 @@ public class Main {
     }
 
     public static void help() {
-        System.out.println("Available commands:\n get\n get_messages\n signUpProcess\n post_message\n update\n delete\n exit");
+        System.out.println("Available commands:\n get\n get_messages\n post_message\n update\n delete\n exit");
     }
 }
